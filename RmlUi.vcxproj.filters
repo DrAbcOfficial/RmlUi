@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\HLSDK\common\interface.cpp" />
+    <ClCompile Include="exportfuncs.cpp" />
+    <ClCompile Include="plugins.cpp" />
+    <ClCompile Include="RmlUi_Platform_SDL.cpp" />
+    <ClCompile Include="RmlUi_FileInterface_GoldSrc.cpp" />
+    <ClCompile Include="RmlUi_Renderer_GL3.cpp" />
+    <ClCompile Include="RmlUi_Backend_SDL_GL3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\HLSDK\common\interface.h" />
+    <ClInclude Include="..\..\metahook.h" />
+    <ClInclude Include="exportfuncs.h" />
+    <ClInclude Include="plugins.h" />
+    <ClInclude Include="RmlUi\RmlUi\Core.h">
+      <Filter>RmlUi</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Debugger.h">
+      <Filter>RmlUi</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Lua.h">
+      <Filter>RmlUi</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\SVG\ElementSVG.h">
+      <Filter>RmlUi\SVG</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Lua\Header.h">
+      <Filter>RmlUi\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Lua\IncludeLua.h">
+      <Filter>RmlUi\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Lua\Interpreter.h">
+      <Filter>RmlUi\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Lua\Lua.h">
+      <Filter>RmlUi\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Lua\LuaType.h">
+      <Filter>RmlUi\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Lua\Utilities.h">
+      <Filter>RmlUi\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Lottie\ElementLottie.h">
+      <Filter>RmlUi\Lottie</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Debugger\Debugger.h">
+      <Filter>RmlUi\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Debugger\Header.h">
+      <Filter>RmlUi\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Animation.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\BaseXMLParser.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Box.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Colour.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ComputedValues.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Context.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ContextInstancer.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ConvolutionFilter.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Core.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\DataModelHandle.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\DataStructHandle.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\DataTypeRegister.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\DataTypes.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\DataVariable.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Debug.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Decorator.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\DecoratorInstancer.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Dictionary.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Element.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ElementDocument.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ElementInstancer.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ElementScroll.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ElementText.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ElementUtilities.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Event.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\EventInstancer.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\EventListener.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\EventListenerInstancer.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Factory.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\FileInterface.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\FontEffect.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\FontEffectInstancer.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\FontEngineInterface.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\FontGlyph.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Geometry.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\GeometryUtilities.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Header.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ID.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Input.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Log.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Math.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Matrix4.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ObserverPtr.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Platform.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Plugin.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Profiling.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\PropertiesIteratorView.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Property.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\PropertyDefinition.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\PropertyDictionary.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\PropertyIdSet.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\PropertyParser.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\PropertySpecification.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\RenderInterface.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ScriptInterface.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\ScrollTypes.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Spritesheet.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Stream.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\StreamMemory.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\StringUtilities.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\StyleSheet.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\StyleSheetContainer.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\StyleSheetSpecification.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\StyleSheetTypes.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\StyleTypes.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\SystemInterface.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Texture.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Traits.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Transform.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\TransformPrimitive.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Tween.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\TypeConverter.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Types.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\URL.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Utilities.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Variant.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Vector2.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Vector3.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Vector4.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Vertex.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\XMLNodeHandler.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\XMLParser.h">
+      <Filter>RmlUi\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Containers\robin_hood.h">
+      <Filter>RmlUi\Core\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Containers\itlib\flat_map.hpp">
+      <Filter>RmlUi\Core\Containers\itlib</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Containers\itlib\flat_set.hpp">
+      <Filter>RmlUi\Core\Containers\itlib</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\DataFormatter.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\DataQuery.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\DataSource.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\DataSourceListener.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementDataGrid.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementDataGridCell.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementDataGridExpandButton.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementDataGridRow.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementForm.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementFormControl.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementFormControlDataSelect.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementFormControlInput.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementFormControlSelect.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementFormControlTextArea.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementProgress.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Core\Elements\ElementTabSet.h">
+      <Filter>RmlUi\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi\RmlUi\Config\Config.h">
+      <Filter>RmlUi\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\begin_code.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\close_code.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_assert.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_atomic.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_audio.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_bits.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_blendmode.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_clipboard.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_config.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_cpuinfo.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_egl.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_endian.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_error.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_events.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_filesystem.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_gamecontroller.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_gesture.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_guid.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_haptic.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_hidapi.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_hints.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_joystick.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_keyboard.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_keycode.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_loadso.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_locale.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_log.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_main.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_messagebox.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_metal.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_misc.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_mouse.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_mutex.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_name.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_opengl.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_opengl_glext.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_opengles.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_opengles2.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_opengles2_gl2.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_opengles2_gl2ext.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_opengles2_gl2platform.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_opengles2_khrplatform.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_pixels.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_platform.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_power.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_quit.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_rect.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_render.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_revision.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_rwops.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_scancode.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_sensor.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_shape.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_stdinc.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_surface.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_system.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_syswm.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_assert.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_common.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_compare.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_crc32.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_font.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_fuzzer.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_harness.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_images.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_log.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_md5.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_memory.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_test_random.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_thread.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_timer.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_touch.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_types.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_version.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_video.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL\SDL_vulkan.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="RmlUi_Backend.h" />
+    <ClInclude Include="RmlUi_Platform_SDL.h" />
+    <ClInclude Include="RmlUi_FileInterface_GoldSrc.h" />
+    <ClInclude Include="RmlUi_Renderer_GL3.h" />
+    <ClInclude Include="RmlUi_Include_GL3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="RmlUi">
+      <UniqueIdentifier>{984f3ab6-df76-4cb4-99e5-70f87bbcf047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RmlUi\SVG">
+      <UniqueIdentifier>{0f5d34c8-26c7-4f36-8619-9cf4e5ae6538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RmlUi\Lua">
+      <UniqueIdentifier>{e3103c98-c528-4d8d-9dc6-790256929ad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RmlUi\Lottie">
+      <UniqueIdentifier>{36ed1c23-4534-47c7-8201-193ed912bf74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RmlUi\Debugger">
+      <UniqueIdentifier>{ee4eae2d-d265-4dab-a6cc-952f94459057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RmlUi\Core">
+      <UniqueIdentifier>{1534b168-aec3-4d59-85bc-c7ee6ab310dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RmlUi\Core\Containers">
+      <UniqueIdentifier>{ebbeb8c3-d91b-4028-b25b-7fa89f7b943e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RmlUi\Core\Containers\itlib">
+      <UniqueIdentifier>{e30d1c19-cea2-43e7-97e1-ae252351dd27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RmlUi\Core\Elements">
+      <UniqueIdentifier>{fd789cb0-5e43-466b-8535-3c336bf68169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RmlUi\Config">
+      <UniqueIdentifier>{61947e62-70df-4f0f-bea2-6efa7e74744b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL">
+      <UniqueIdentifier>{b0cab532-9ba7-40d2-82bf-160201c8839e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RmlUi\RmlUi\Lua\LuaType.inl">
+      <Filter>RmlUi\Lua</Filter>
+    </None>
+    <None Include="RmlUi\RmlUi\Core\Colour.inl">
+      <Filter>RmlUi\Core</Filter>
+    </None>
+    <None Include="RmlUi\RmlUi\Core\Element.inl">
+      <Filter>RmlUi\Core</Filter>
+    </None>
+    <None Include="RmlUi\RmlUi\Core\Matrix4.inl">
+      <Filter>RmlUi\Core</Filter>
+    </None>
+    <None Include="RmlUi\RmlUi\Core\TypeConverter.inl">
+      <Filter>RmlUi\Core</Filter>
+    </None>
+    <None Include="RmlUi\RmlUi\Core\Variant.inl">
+      <Filter>RmlUi\Core</Filter>
+    </None>
+    <None Include="RmlUi\RmlUi\Core\Vector2.inl">
+      <Filter>RmlUi\Core</Filter>
+    </None>
+    <None Include="RmlUi\RmlUi\Core\Vector3.inl">
+      <Filter>RmlUi\Core</Filter>
+    </None>
+    <None Include="RmlUi\RmlUi\Core\Vector4.inl">
+      <Filter>RmlUi\Core</Filter>
+    </None>
+  </ItemGroup>
+</Project>

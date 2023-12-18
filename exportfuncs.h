@@ -4,4 +4,4 @@
 #include "cl_entity.h"
 
 void HUD_Init();
-void HUD_Frame(double clientTime);
+int HUD_Redraw(float clientTime, int a);

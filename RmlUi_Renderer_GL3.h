@@ -33,7 +33,7 @@
 #include <RmlUi/Core/Types.h>
 
 namespace Gfx {
-struct ShadersData;
+	struct ShadersData;
 }
 
 class RenderInterface_GL3 : public Rml::RenderInterface {
@@ -94,15 +94,15 @@ private:
 };
 
 /**
-    Helper functions for the OpenGL 3 renderer.
+	Helper functions for the OpenGL 3 renderer.
  */
 namespace RmlGL3 {
 
-// Loads OpenGL functions. Optionally, the out message describes the loaded GL version or an error message on failure.
-bool Initialize(Rml::String* out_message = nullptr);
+	// Loads OpenGL functions. Optionally, the out message describes the loaded GL version or an error message on failure.
+	bool Initialize(Rml::String* out_message = nullptr);
 
-// Unloads OpenGL functions.
-void Shutdown();
+	// Unloads OpenGL functions.
+	void Shutdown();
 
 } // namespace RmlGL3
 

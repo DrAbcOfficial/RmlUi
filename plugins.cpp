@@ -70,7 +70,7 @@ void IPluginsV4::LoadClient(cl_exportfuncs_t *pExportFunc)
 	Rml::Initialise();
 
 	pExportFunc->HUD_Init = HUD_Init;
-	pExportFunc->HUD_Frame = HUD_Frame;
+	pExportFunc->HUD_Redraw = HUD_Redraw;
 }
 
 void IPluginsV4::ExitGame(int iResult){

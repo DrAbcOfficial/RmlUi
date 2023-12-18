@@ -10,6 +10,7 @@
 #include <RmlUi/Core.h>
 #include "RmlUi_Backend.h"
 #include <RmlUi/Debugger/Debugger.h>
+#include <plugins.h>
 
 cl_enginefunc_t gEngfuncs;
 engine_studio_api_t IEngineStudio;
@@ -24,15 +25,17 @@ void HUD_Init() {
 	// Create a context to display documents within.
 	g_pContext = Rml::CreateContext("main", Rml::Vector2i(si.iWidth, si.iHeight));
 	Rml::Debugger::Initialise(g_pContext);
-	Rml::ElementDocument* document = g_pContext->LoadDocument("rmltest/demo.rml");
+	Rml::Debugger::SetVisible(true);
+	Rml::ElementDocument* document = g_pContext->LoadDocument(Rml::String("rmltest/svg.rml"));
 	if (document)
 		document->Show();
 }
 
-void HUD_Frame(double a1){
-	gExportfuncs.HUD_Frame(a1);
+int HUD_Redraw(float a1, int a2){
 	g_pContext->Update();
 	Backend::BeginFrame();
+	int result = gExportfuncs.HUD_Redraw(a1, a2);
 	g_pContext->Render();
 	Backend::PresentFrame();
+	return result;
 }

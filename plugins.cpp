@@ -3,7 +3,7 @@
 
 #include <RmlUi/Core.h>
 #include "RmlUi_Backend.h"
-#include "RmlUi_FileInterFace_GoldSrc.h"
+#include <Shell.h>
 
 cl_exportfuncs_t gExportfuncs;
 mh_interface_t *g_pInterface;
@@ -62,11 +62,10 @@ void IPluginsV4::LoadClient(cl_exportfuncs_t *pExportFunc)
 	g_dwClientBase = g_pMetaHookAPI->GetClientBase();
 	g_dwClientSize = g_pMetaHookAPI->GetClientSize();
 
+	Shell::Initialize();
 	Backend::Initialize();
-	static FileInterface_GoldSrc pFileInterFace(g_pInterface->FileSystem);
 	Rml::SetSystemInterface(Backend::GetSystemInterface());
 	Rml::SetRenderInterface(Backend::GetRenderInterface());
-	Rml::SetFileInterface(&pFileInterFace);
 	Rml::Initialise();
 
 	pExportFunc->HUD_Init = HUD_Init;
@@ -74,7 +73,9 @@ void IPluginsV4::LoadClient(cl_exportfuncs_t *pExportFunc)
 }
 
 void IPluginsV4::ExitGame(int iResult){
-	
+	Rml::Shutdown();
+	Backend::Shutdown();
+	Shell::Shutdown();
 }
 
 const char completeVersion[] =

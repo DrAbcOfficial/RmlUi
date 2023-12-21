@@ -155,6 +155,7 @@
     <ClCompile Include="RmlUi_FileInterface_GoldSrc.cpp" />
     <ClCompile Include="RmlUi_Platform_SDL.cpp" />
     <ClCompile Include="RmlUi_Renderer_GL3.cpp" />
+    <ClCompile Include="Shell.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\HLSDK\common\interface.h" />
@@ -359,6 +360,7 @@
     <ClInclude Include="SDL\SDL_version.h" />
     <ClInclude Include="SDL\SDL_video.h" />
     <ClInclude Include="SDL\SDL_vulkan.h" />
+    <ClInclude Include="Shell.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RmlUi\RmlUi\Core\Colour.inl" />

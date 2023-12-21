@@ -8,6 +8,7 @@
     <ClCompile Include="RmlUi_FileInterface_GoldSrc.cpp" />
     <ClCompile Include="RmlUi_Renderer_GL3.cpp" />
     <ClCompile Include="RmlUi_Backend_SDL_GL3.cpp" />
+    <ClCompile Include="Shell.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\HLSDK\common\interface.h" />
@@ -598,6 +599,7 @@
     <ClInclude Include="RmlUi_FileInterface_GoldSrc.h" />
     <ClInclude Include="RmlUi_Renderer_GL3.h" />
     <ClInclude Include="RmlUi_Include_GL3.h" />
+    <ClInclude Include="Shell.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="RmlUi">
